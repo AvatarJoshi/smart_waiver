@@ -1,9 +1,9 @@
 # Smart Waiver Project
 **Project Overview**
 
-This is an automation project I performed as volunteer work for non-profit organization Santa Cruz Mountains Trail Stewardship (SCMTS). SCMTS is a non-profit trail stewardship organization located in Santa Cruz County (CA). A major way they maintain trails is by leading volunteer events at local and State parks located throughout the county. 
+This is an automation project I performed as a volunteer for Santa Cruz Mountains Trail Stewardship (SCMTS). SCMTS is a non-profit trail stewardship organization located in Santa Cruz County (CA). A major way they maintain local trails is by leading volunteer events at local and State parks located throughout the county. 
 
-Volunteer events are often run multiple times per week and require participants to sign unique waivers depending on the project site. The event size can range from 3 - 500+ volunteers depending on the type of event being run. Volunteer coordinators from SCMTS have to manually check an internal "Smart Waiver" database system that contains which volunteers have signed waivers and then email participants to get them to sign the waiver prior to the event. ***Therefore, the purpose of this project was to save SCMTS staff hours of time each week by creating an automated system to (1) check which volunteers have signed waivers and (2) email the volunteers which have not yet signed waivers.***    
+Volunteer events are run often (multiple times per week) and require participants to sign unique waivers depending on the project site. The event size can range from 3 - 500+ volunteers depending on the type of event being run. Volunteer coordinators from SCMTS have to manually check an internal "Smart Waiver" database system that contains which volunteers have signed waivers and then email participants to get them to sign the waiver prior to the event. Needless to say, this is a tedious task that is more prone to error as the event size increases. ***Therefore, the purpose of this project was to save SCMTS staff hours of time each week by creating an automated system to (1) check which volunteers have signed waivers and (2) email the volunteers which have not yet signed waivers for the event.***    
 
 ### Resources
 [smart_waiver.ipynb](smart_waiver.ipynb) - Contains code to check a CSV file from Smart Waiver for participants that signed waivers. If a name is found in the Smart Waiver CSV file, a box is checked in the SCMTS google sheet for that event. It also generates a new CSV file containing a list of participants that have not signed waivers (unmatched_names.csv). 
@@ -81,8 +81,3 @@ The Google Doc containing the email template must include specific keywords:
 - `email_body` - line that precedes the body text.
 - `{name}` - placeholder in the body text where the recipient's name will be inserted.
 
-### Final Notes:
-- Both notebooks are designed to work together, with the Smart Waiver Notebook identifying the volunteers who haven't signed the waiver, and the Smart Gmail Notebook sending them email reminders.
-- Ensure that you adhere to all relevant privacy and permission requirements when handling personal data.
-
-By following the instructions and understanding the code explanations, users should be able to successfully set up and utilize this system using their Google accounts and personalized information.
