@@ -1,5 +1,5 @@
 # Smart Waiver Project
-**Project Overview**
+### Project Overview
 
 This is an automation project I performed as a volunteer for Santa Cruz Mountains Trail Stewardship (SCMTS). SCMTS is a non-profit trail stewardship organization located in Santa Cruz County (CA). A major way they maintain local trails is by leading volunteer events at local and State parks located throughout the county. 
 
